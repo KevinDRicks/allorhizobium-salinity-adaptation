@@ -13,4 +13,4 @@ The folder for the phenotypic analysis, "phenotypic_analysis" includes building 
 The genomics folder, "genomics", includes analyses for: building and annotating an assembly of the ancestral Allorhizobium strain, calling SNPs from the evolved strains in reference to this ancestor, and characterizing the distribution of these SNPs by the historic selective treatments. These analyses are assumed to be conducted in the above described order. 
 
 
-Recreating these analyses from the beginning requires the raw sequencing files, found in the associated NCBI bioproject. However, we've included the output from the assembly, annotation, and SNP calling in the **data** folder, from which subsequent analyses can be conducted.
+Recreating the genomic analyses in full requires the raw sequencing files, found in the associated NCBI bioproject. However, we've included the output from the assembly, annotation, and SNP calling in the **data** folder, from which subsequent analyses can be conducted.
