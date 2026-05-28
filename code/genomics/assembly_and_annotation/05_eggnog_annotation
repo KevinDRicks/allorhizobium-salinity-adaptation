@@ -1,0 +1,36 @@
+script was initially run on Compute Canada server
+#!/bin/bash
+#codes passes the predicted protein sequences from the ancestor genome through eggnog for annotation
+#this differs from the interproscan in that we extract COG pathways here, which we used for 
+#broad scale analysis of plasmid functions
+#these protein sequences were extracted from the ancestor genome in the following script: 
+#02_id_protein_coding.sh & 03_split_protein_coding_by_replicon.R
+#note: this script was initially run on Compute Canada server
+
+
+
+#create virtual environment for processing eggnog
+module load python/3.10
+cd $HOME/modules
+python3 -m venv eggnog_env
+source eggnog_env/bin/activate
+pip install eggnog-mapper
+
+#download eggnog into scratch folder
+cd $SCRATCH/eggnog_df
+python download_eggnog_data.modif.py -y --data_dir $SCRATCH/eggnog_df
+
+#path to eggnog storage
+export EGGNOG_DATA_DIR=$SCRATCH/eggnog_df
+
+#make directory for eggnog
+mkdir $SCRATCH/eggnog_out
+emapper.py -m diamond --itype CDS -i /path/to/ancestor/  -o test --output_dir $SCRATCH/eggnog_out
+
+
+emapper.py -i my_bacteria.fna \
+           -o my_annotation \
+           --cpu 8 \
+           -m diamond \
+           --itype genome \
+           --genepred prodigal
