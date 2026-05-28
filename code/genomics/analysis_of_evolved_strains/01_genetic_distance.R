@@ -17,10 +17,10 @@ merge_snps <- read.csv("/path/to/snp_summary.csv")
 layout <- read.csv('/path/to/sequencing_labels.csv')
 working.df <- layout[layout$Strain!='ancestor',]
 
-pl1 <- readDNAStringSet("/path/to/ancestral_plasmid1.fasta")
-pl2 <- readDNAStringSet("/path/to/ancestral_plasmid2.fasta")
-pl3 <- readDNAStringSet("/path/to/ancestral_plasmid3.fasta")
-pl4 <- readDNAStringSet("/path/to/ancestral_plasmid4.fasta")
+pl1 <- readDNAStringSet("/path/to/plasmid1.fasta")
+pl2 <- readDNAStringSet("/path/to/plasmid2.fasta")
+pl3 <- readDNAStringSet("/path/to/plasmid3.fasta")
+pl4 <- readDNAStringSet("/path/to/plasmid4.fasta")
 chr <- readDNAStringSet('/path/to/main_chromosome.fasta')
 
 #recode deletions from variants to a blank space instead of a .
