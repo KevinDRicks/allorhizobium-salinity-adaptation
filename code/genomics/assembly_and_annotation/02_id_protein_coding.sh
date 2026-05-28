@@ -9,7 +9,7 @@ module load gcc/9.3.0
 module load prokka/1.14.5
 
 prokka /path/to/ancestor/allorhizobium_anc_assembly.fasta --outdir /prokka/output/predicted/proteincoding/genes
-#output will include prokka_output.gff & prokka_output.tsv & prokka_output.faa
+#while there is a lot of output, the salient pieces are: prokka_output.gff & prokka_output.tsv & prokka_output.faa
 #these can be found in the data folder in on the git repo 
 #PROKKA_05052025.gff
 #PROKKA_05052025.tsv
