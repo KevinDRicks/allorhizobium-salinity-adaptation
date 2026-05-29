@@ -1,0 +1,13 @@
+Growth,Growth_SE,NitrogenHistory,SalineHistory,ContNitrogen,ContSaline,Status
+2.416168447,0.079900943,NA,NA,Low,Low,Ancestor
+2.155523465,0.064772109,NA,NA,Low,Low,Sterile
+1.955031836,0.079925468,NA,NA,Low,High,Ancestor
+1.721282322,0.066333819,NA,NA,Low,High,Sterile
+2.422091749,0.047951897,Low,Low,Low,Low,Evolved
+1.806989883,0.049179444,Low,Low,Low,High,Evolved
+2.377475135,0.050077306,Low,High,Low,Low,Evolved
+2.152578602,0.05046263,Low,High,Low,High,Evolved
+1.774427466,0.047464629,High,Low,Low,Low,Evolved
+1.742018521,0.048586662,High,Low,Low,High,Evolved
+2.000372016,0.055200147,High,High,Low,Low,Evolved
+1.760538299,0.05509466,High,High,Low,High,Evolved
