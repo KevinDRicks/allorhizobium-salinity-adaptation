@@ -6,7 +6,7 @@ library('lmerTest')
 library('broom')
 library('clipr')
 library('broom.mixed')
-microbe_growth <- read.csv("G:/My Drive/Work/Toronto/SalineEvolution/gitrepo_prep/Files/Microbe_growth_files/microbial_growth_rates.csv")
+microbe_growth <- read.csv("/path/to/microbial_growth_rates.csv")
 
 #currently data has a column for the growth rate in each environment
 #we can run models on each of these
