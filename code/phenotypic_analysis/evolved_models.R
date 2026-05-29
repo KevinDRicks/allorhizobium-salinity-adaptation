@@ -22,6 +22,7 @@ plant_growth$area <- plant_growth$area*cf
 plant_growth_evolved <- plant_growth[plant_growth$Status=='Evolved',]
 
 #linear model describing impact of ancestral allorhizobium strain and contemporary nitrogen on plant growth
+#coefficients extracted from this model represent the mean treatment effects on, seen in the plant_growth_by_treatment.csv 
 growth_model <- lmer(area~Date.merge*ContSaline*SalineHistory*NitrogenHistory+Date.merge*StartingSize +  (1|StrainID) + 
                (1|Chamber_Column) + (1|PlatexWell),
                plant_growth_evolved)
