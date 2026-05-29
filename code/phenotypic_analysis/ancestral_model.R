@@ -9,7 +9,7 @@ library(clipr)
 library(broom.mixed)
 
 #load in data
-plant_growth <- read.csv("G:/My Drive/Work/Toronto/SalineEvolution/gitrepo_prep/Files/Plant_data_files/ancestor_strain_plant_growth.csv")
+plant_growth <- read.csv("/path/to/ancestor_strain_plant_growth.csv")
 #convert plate number of factor
 plant_growth$PlateNumber <- as.factor(plant_growth$PlateNumber)
 
