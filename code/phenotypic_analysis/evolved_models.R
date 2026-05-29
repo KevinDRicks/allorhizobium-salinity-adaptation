@@ -10,7 +10,7 @@ library(clipr)
 library(broom.mixed)
 
 #load in data
-plant_growth <- read.csv("G:/My Drive/Work/Toronto/SalineEvolution/gitrepo_prep/Files/Plant_data_files/evolved_strain_plant_growth.csv")
+plant_growth <- read.csv("/path/to/evolved_strain_plant_growth.csv")
 plant_growth$Plate <- as.factor(plant_growth$Plate)
 
 #data list area of plant in pixels. We convert this to mm2 
